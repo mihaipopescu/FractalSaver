@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="Help Compile Rule"
+	Version="8,00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="HHC"
+			DisplayName="HTML Help Compiler"
+			CommandLine="c:\Progra~1\HTMLHE~1\hc.bat [inputs]"
+			Outputs="$(InputName).chm"
+			FileExtensions="*.hhp"
+			ExecutionDescription="Compiling Help Project ..."
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

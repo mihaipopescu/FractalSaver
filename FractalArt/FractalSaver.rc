@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Romanian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ROM)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON                    "fs.ico"
+#endif    // Romanian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 685, 378
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "FractalArt Screen Saver Setup"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "C = ",IDC_STATIC,8,6,15,8
+    COMBOBOX        IDC_PRECONST,23,4,120,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coloring Algorithm",IDC_STATIC,12,163,59,8
+    COMBOBOX        IDC_COLALG,72,161,98,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_PALST,11,177,160,59,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Palette cycling",IDC_STATIC,11,240,47,8
+    CONTROL         "Left",IDC_CYCLEFT,"Button",BS_AUTORADIOBUTTON,60,240,23,10
+    CONTROL         "Right",IDC_CYCRIGHT,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,143,240,27,10
+    LTEXT           "Redraw Speed",IDC_STATIC,11,260,48,8
+    SCROLLBAR       ID_SPEED,60,260,110,10
+    CONTROL         "Mute",IDC_MUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,285,32,10
+    PUSHBUTTON      "Play Sample",IDC_PLAYMUS,60,282,110,15
+    LTEXT           "Instrument",IDC_STATIC,11,306,36,8
+    COMBOBOX        IDC_INSTRUMENT,60,302,110,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Master Tempo",IDC_STATIC,11,326,46,8
+    LTEXT           "Fast",105,61,317,20,8
+    SCROLLBAR       IDC_TEMPO,60,326,110,10
+    LTEXT           "Slow",106,156,317,14,8
+    PUSHBUTTON      "Apply",IDC_SAVESCR,125,357,52,14
+    LTEXT           "ScreenSaver",IDC_STATIC,9,359,42,8
+    PUSHBUTTON      "Discard",IDC_DISCARD,60,357,52,14
+    LTEXT           "Fast",107,155,251,15,8
+    LTEXT           "Slow",108,61,251,14,8
+    GROUPBOX        "Palette",IDC_STATIC,6,153,171,120
+    GROUPBOX        "Fractal Music",IDC_STATIC,6,274,171,66
+    LTEXT           "Credits: University of Craiova...Faculty of Automatics, Computers and Electronics...Hazard Team....2007",IDC_STATIC,254,363,339,8
+    LTEXT           "ShareITC © http://www.shareitc.eu/",IDC_LOC,372,355,129,8
+    CONTROL         "",IDC_PAINTPROGRESS,"msctls_progress32",WS_BORDER | 0x1,180,344,498,10
+    PUSHBUTTON      "Anti-aliasing (2x) preview",IDC_ANTIALIASING,60,342,117,12
+    PUSHBUTTON      "Home",IDC_HOME,6,343,50,12
+    PUSHBUTTON      "Swap",IDC_SWITCH,147,4,30,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 678
+        VERTGUIDE, 170
+        VERTGUIDE, 177
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 371
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DESCRIPTION         "FractalArt Screen Saver"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INIFILE             "fart.ini"
+    IDS_APPNAME             "FractalSaver"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

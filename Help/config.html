@@ -1,0 +1,70 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Customizing FractalSaver</title>
+</head>
+<body>
+<h2>Customizing FractalSaver</h2>
+    <p>
+        Before making any changes it's good to have a basic knowledge on fractals though
+        a random setup always lead to the best user experience.<br />
+        To unleash the full power of FractalSaver you must click the <b>Settings</b> button.</p>
+    <center>
+        <img src="configfs.jpg" alt="Configure FractalSaver" /></center>
+    <p>
+        • By clicking on the small black&amp;white Mandelbrot image on the left you will
+        notice that the Julia Fractal on the right is changing accordingly. The reason why
+        this happens is that there is a direct link between the two images. You will find
+        in the mathematical foundation of the two fractals that the link between them is
+        the complex number <b>C</b>. The difference is that for the Mandelbrot set <b>C</b>
+        is a <i>variable</i> and for the Julia set is a input <i>constant</i>. So whether
+        the constant <b>C</b> is selected from the list or picked from the Mandelbrot fractal
+        it is used as input for the Julia fractal. Higher complexity of Julia set could
+        be achieved by choosing constants near the edge of the Mandelbrot set. Although, you
+        can swap between the two sets by clicking <b>Swap</b> button.
+    </p>
+    <p>
+        • The area on the right where Julia is drawn has zoom and pan capability having
+        one constraint: constraint: the point where you have clicked must remain in the
+        same spot in the zoomed image.<br />
+        <b>Left-Click</b> = Zoom In (2x)<br />
+        <b>Right-Click</b> = Zoom Out (2x)<br />
+        <b>Middle-Click</b> = if you are in Big Mandelbrot mode you will select the 
+        constant otherwise you will observe the obit of the point.<br />
+        <b>Mouse scroll</b> = cycles the palette showing how the fractal will be animated<br />
+        <b>Pan</b> = a series of zoom in/out<br />
+        <b>Home</b> = returns to default zoom and pan settings for the fractal<br />
+    </p>
+    <p>
+        • <b>Coloring Algorithms</b> = the algorithm used for mapping complex space of the
+        Julia set to a colored image space.<br />
+        As only 256 colors are used to represent the fractal you can choose the preferred
+        palette color set from 256 different palettes.<br />
+        The cycling of the palette can be realized to the left or to the right. This cycling
+        can be visualized as a shifting window over a circular palette of colors.<br />
+        The screen saver animates the fractal by cycling its color palette. This is made
+        at run time along with the refresh of the screen with a certain speed indicated
+        by <b>Redraw speed</b>.<br />
+        Painting fractals which are known for their infinite complexity comes with <i>a major
+            drawback</i>. So the software cannot compute the exact color of <i>sharp edges</i>
+        of the fractal due to the finite nature of the computers. <b>Anti-aliasing</b> (a
+        2x multisampling method) is used to show a more precise picture of the fractal.
+        This comes with a price: the colors of the image are outside the palette color set.
+        This implies that this is just a <i>preview</i> and the animation is made on the
+        original image.
+    </p>
+    <p>
+        • <b><a name="fractalmusic">Fractal Music</a></b> = an interesting feature of the
+        FractalSaver that is disabled by default.<br />
+        Clicking the <b>Mute</b> checkbox you can check the fractal music by clicking on
+        the <b>Play Sample</b> button. This will freeze the interface and release it after
+        is done playing the fractal image 8 times shrinked. You can experiment Fractal Music
+        with a range of 127 different instruments if and only if your sound card have <i>Synthesizer</i>
+        capability (MIDI) and of course Volume of the <b>SW Synth</b> (Software Synthesizer)
+        port is not muted. Please check!<br />
+        A <b>Master Tempo</b> can control the speed at which the music is playing and can
+        be set from the interface.<br />
+        If you like the current settings you just have to click the <b>Apply</b> button
+        and your screen saver is configured to your like.
+    </p>
+</body>
+</html>

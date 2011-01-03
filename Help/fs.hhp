@@ -1,0 +1,20 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=fractalsaver.chm
+Contents file=fs.hhc
+Default topic=help.html
+Display compile progress=Yes
+Full-text search=Yes
+
+[FILES]
+config.html
+install.html
+fractals.html
+guide.html
+legal.html
+gpl.html
+help.html
+
+[ALIAS]
+main_index = help.html

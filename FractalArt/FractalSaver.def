@@ -1,0 +1,3 @@
+EXPORTS
+    ScreenSaverProc @1
+    ScreenSaverConfigureDialog @2
