@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 685, 378
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW
+CAPTION "FractalSaver Config"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "C = ",IDC_STATIC,8,6,15,8
+    COMBOBOX        IDC_PRECONST,23,4,120,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coloring Algorithm",IDC_STATIC,11,164,59,8
+    COMBOBOX        IDC_COLALG,77,162,118,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_PALST,11,177,184,52,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Palette cycling",IDC_STATIC,11,240,47,8
+    CONTROL         "Left",IDC_CYCLEFT,"Button",BS_AUTORADIOBUTTON,60,240,23,10
+    CONTROL         "Right",IDC_CYCRIGHT,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,168,239,27,10
+    LTEXT           "Redraw Speed",IDC_STATIC,11,260,48,8
+    SCROLLBAR       ID_SPEED,65,260,130,10
+    CONTROL         "Mute",IDC_MUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,285,32,10
+    PUSHBUTTON      "Play Sample",IDC_PLAYMUS,66,282,129,15
+    LTEXT           "Instrument",IDC_STATIC,11,306,36,8
+    COMBOBOX        IDC_INSTRUMENT,66,302,129,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Master Tempo",IDC_STATIC,11,326,46,8
+    LTEXT           "Fast",105,61,317,20,8
+    SCROLLBAR       IDC_TEMPO,68,326,127,10
+    LTEXT           "Slow",106,181,317,14,8
+    PUSHBUTTON      "Apply",IDC_SAVESCR,143,357,52,14
+    LTEXT           "ScreenSaver",IDC_STATIC,9,359,42,8
+    PUSHBUTTON      "Discard",IDC_DISCARD,60,357,52,14
+    LTEXT           "Fast",107,180,252,15,8
+    LTEXT           "Slow",108,61,251,14,8
+    GROUPBOX        "Palette",IDC_STATIC,5,153,195,120
+    GROUPBOX        "Fractal Music",IDC_STATIC,5,274,195,66
+    LTEXT           "Copyright © Mihai Popescu",IDC_STATIC,362,354,87,8
+    LTEXT           "http://sourceforge.net/projects/fractalsaver/",IDC_LOC,336,363,148,8
+    CONTROL         "",IDC_PAINTPROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,200,344,478,10
+    PUSHBUTTON      "Anti-aliasing (2x) preview",IDC_ANTIALIASING,78,343,117,12
+    PUSHBUTTON      "Home",IDC_HOME,5,343,50,12
+    PUSHBUTTON      "Swap",IDC_SWITCH,165,3,30,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 678
+        VERTGUIDE, 11
+        VERTGUIDE, 195
+        VERTGUIDE, 200
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 371
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON                    "fs.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DESCRIPTION         "FractalArt Screen Saver"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INIFILE             "fart.ini"
+    IDS_APPNAME             "FractalSaver"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Mihai Popescu"
+            VALUE "FileDescription", "FractalSaver ScreenSaver"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FractalSaver.scr"
+            VALUE "LegalCopyright", "Copyright (C) 2011 by Mihai Popescu"
+            VALUE "OriginalFilename", "FractalSaver"
+            VALUE "ProductName", "FractalSaver"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
